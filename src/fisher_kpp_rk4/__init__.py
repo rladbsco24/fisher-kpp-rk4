@@ -10,6 +10,13 @@ from .solver import (
     rk4_step,
     solve_rk4,
 )
+from .visualization import (
+    circular_initial_condition,
+    fisher_kpp_rhs_2d,
+    plot_cross_section_view,
+    rk4_step_2d,
+    solve_2d_fisher_kpp_snapshots,
+)
 
 __all__ = [
     "apply_dirichlet_bc",
@@ -20,4 +27,9 @@ __all__ = [
     "relative_l2",
     "rk4_step",
     "solve_rk4",
+    "circular_initial_condition",
+    "fisher_kpp_rhs_2d",
+    "plot_cross_section_view",
+    "rk4_step_2d",
+    "solve_2d_fisher_kpp_snapshots",
 ]

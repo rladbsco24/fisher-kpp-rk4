@@ -14,7 +14,9 @@ using Method of Lines, second-order central finite differences in space, and cla
 - `src/fisher_kpp_rk4/solver.py`: RHS, RK4 step, solver, stability check, front position, and error utilities.
 - `scripts/run_demo.py`: executable script for the main simulation.
 - `scripts/run_convergence.py`: compact convergence sanity check.
+- `scripts/run_cross_section_view.py`: 2D Fisher-KPP visual check in the cross-section panel style.
 - `notebooks/fisher_kpp_rk4_demo.ipynb`: notebook version of the demo.
+- `assets/cross_section_view.png`: sample cross-section panel output.
 - `requirements.txt`: minimal runtime and demo dependencies.
 - `pyproject.toml`: installable package metadata.
 
@@ -31,6 +33,18 @@ Results are saved under `outputs/`:
 - `fisher_kpp_rk4_results.npz`
 - `snapshots.png`
 - `front_position.png`
+
+## Cross-Section Style View
+
+To generate a visual check like a multi-time cross-section panel:
+
+```bash
+python scripts/run_cross_section_view.py
+```
+
+This writes `outputs/cross_section_view.png`.
+
+![Cross-section panel output](assets/cross_section_view.png)
 
 ## Run as Notebook
 
